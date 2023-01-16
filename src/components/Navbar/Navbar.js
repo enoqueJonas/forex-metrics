@@ -5,7 +5,7 @@ import settings from '../../assets/gear.png';
 import './Navbar.css';
 
 const Navbar = () => (
-    <nav>
+    <nav className='navbar'>
         <div className='back'>
             <img src={back} width='20px' height='20px'/>
         </div>
