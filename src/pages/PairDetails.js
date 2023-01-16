@@ -1,9 +1,7 @@
-import React from "react";
+import React from 'react';
 
-const PairDetails = () => {
-    return(
+const PairDetails = () => (
         <div>PairDetails</div>
-    );
-}
+);
 
 export default PairDetails;

@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
+import PairList from '../components/PairList/PairList';
 
-const Home = () => {
-    return(
-        <div>Home</div>
-    );
-}
+const Home = () => (
+                <div>
+                        <PairList />
+                </div>
+);
 
 export default Home;
