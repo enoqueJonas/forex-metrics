@@ -1,4 +1,5 @@
 import React from 'react';
+import './Pair.css';
 
 const Pair = () => (
         <div className="pair">
