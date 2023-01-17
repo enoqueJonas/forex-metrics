@@ -13,32 +13,8 @@ import nzd from '../../assets/dollar-coin.png';
 const Pair = (props) => {
   const pair1 = props.pair.ticker.slice(0, 3);
   const pair2 = props.pair.ticker.slice(4, 8);
-  const getSymbol1 = () => {
-    switch (pair1) {
-      case 'EUR':
-        return euro;
-      case 'USD':
-        return dollar;
-      case 'GBP':
-        return gbp;
-      case 'JPY':
-        return jpy;
-      case 'CHF':
-        return chf;
-      case 'NOK':
-        return nok;
-      case 'AUD':
-        return aud;
-      case 'CAD':
-        return cad;
-      case 'NZD':
-        return nzd;
-      default:
-        return '';
-    }
-  };
-  const getSymbol2 = () => {
-    switch (pair2) {
+  const getSymbol = (symbol) => {
+    switch (symbol) {
       case 'EUR':
         return euro;
       case 'USD':
@@ -62,8 +38,8 @@ const Pair = (props) => {
     }
   };
 
-  const symbol1Source = getSymbol1();
-  const symbol2Source = getSymbol2();
+  const symbol1Source = getSymbol(pair1);
+  const symbol2Source = getSymbol(pair2);
 
   console.log(pair1, pair2);
   return (
