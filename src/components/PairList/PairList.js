@@ -9,7 +9,11 @@ const PairList = (props) => {
   useEffect(() => {
     dispatch(getPairs());
   }, []);
-  const pairs = useSelector((state) => state).slice(0, 20);
+
+  const pairs = useSelector((state) => state)
+    .slice(0, 20)
+    .filter((pair) => pair.ticker.includes(props.input.toUpperCase()));
+
   return (
         <div className='pair-list-wrap'>
             <p className='category-type'>Pairs by name</p>
