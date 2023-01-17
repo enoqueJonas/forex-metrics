@@ -9,18 +9,15 @@ const PairList = () => {
   useEffect(() => {
     dispatch(getPairs());
   }, []);
-  const pairs = useSelector((state) => state);
+  const pairs = useSelector((state) => state).slice(0, 20);
   console.log(pairs[0]);
   return (
         <div className='pair-list-wrap'>
             <p className='category-type'>Pairs by name</p>
             <div className="pair-list">
-                <Pair />
-                <Pair />
-                <Pair />
-                <Pair />
-                <Pair />
-                <Pair />
+                {pairs.map(((pair) => (
+                        <Pair pair={pair}/>
+                )))}
             </div>
         </div>
   );
