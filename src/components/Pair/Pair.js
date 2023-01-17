@@ -40,14 +40,12 @@ const Pair = (props) => {
 
   const symbol1Source = getSymbol(pair1);
   const symbol2Source = getSymbol(pair2);
-
-  console.log(pair1, pair2);
   return (
         <div className="pair">
             <div className='pair-symbol'>
-                <img src={symbol1Source} className='symbol' width='50px' height='50px' />
+                <img src={symbol1Source} className='symbol' width='40px' height='40px' />
                 <span className='separator'>vs</span>
-                <img src={symbol2Source} className='symbol' width='50px' height='50px' />
+                <img src={symbol2Source} className='symbol' width='40px' height='40px' />
             </div>
             <div className='pair-info-wrap'>
                 <p className='pair-info'>{props.pair.ticker}</p>

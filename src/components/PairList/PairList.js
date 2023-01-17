@@ -4,13 +4,12 @@ import Pair from '../Pair/Pair';
 import './PairList.css';
 import getPairs from '../../redux/pair/pair-api';
 
-const PairList = () => {
+const PairList = (props) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getPairs());
   }, []);
   const pairs = useSelector((state) => state).slice(0, 20);
-  console.log(pairs[0]);
   return (
         <div className='pair-list-wrap'>
             <p className='category-type'>Pairs by name</p>
