@@ -1,4 +1,5 @@
 import React from 'react';
+import './PairDetails.css';
 
 const PairDetails = () => (
                 <div className='pair-details'>
@@ -12,6 +13,27 @@ const PairDetails = () => (
                                         <p className='pair-info'>props.pair.ticker</p>
                                         <p className='pair-info'>props.pair.bid</p>
                                 </div>
+                        </div>
+                        <div className='details-wrap'>
+                                <p className='pair-breakdown'>Pair Breakdown</p>
+                                <ul className='details-list'>
+                                        <li className='list-item'>
+                                                <p className='category'>Bid</p>
+                                                <p className='value'>1.67826</p>
+                                        </li>
+                                        <li className='list-item'>
+                                                <p className='category'>Bid</p>
+                                                <p className='value'>1.67826</p>
+                                        </li>
+                                        <li className='list-item'>
+                                                <p className='category'>Bid</p>
+                                                <p className='value'>1.67826</p>
+                                        </li>
+                                        <li className='list-item'>
+                                                <p className='category'>Bid</p>
+                                                <p className='value'>1.67826</p>
+                                        </li>
+                                </ul>
                         </div>
                 </div>
 );
