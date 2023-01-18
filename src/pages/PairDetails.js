@@ -1,7 +1,9 @@
 import React from 'react';
 
 const PairDetails = () => (
-        <div>PairDetails</div>
+        <div className='pair-details'>
+
+        </div>
 );
 
 export default PairDetails;
