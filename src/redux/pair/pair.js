@@ -7,7 +7,7 @@ const pairReducer = (state = [], action) => {
     //   console.log(payload);
       return payload.map((pair) => {
         const {
-          ticker, bid, ask, open, low,
+          ticker, bid, ask, open, low, high,
         } = pair;
         return {
           ticker,
@@ -15,6 +15,7 @@ const pairReducer = (state = [], action) => {
           ask,
           open,
           low,
+          high,
         };
       });
     default:
