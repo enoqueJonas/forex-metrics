@@ -19,7 +19,7 @@
   "scripts": {
     "start": "NODE_ENV=production node_modules/react-scripts/bin/react-scripts.js start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "NODE_ENV=production node_modules/react-scripts/bin/react-scripts.js test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,6 +44,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.27.4"
+    "eslint-plugin-import": "^2.27.4",
+    "jest-environment-jsdom": "^29.3.1"
   }
 }

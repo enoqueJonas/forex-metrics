@@ -48,7 +48,10 @@
 }
 
 .pair-breakdown {
+    display: flex;
+    align-items: center;
     padding-left: 10px;
+    height: 8px;
 }
 
 .details-list {
