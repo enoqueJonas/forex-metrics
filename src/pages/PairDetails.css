@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   min-height: 35em;
-  max-height: auto;
+  height: auto;
   gap: 10px;
   justify-content: flex-start;
   align-items: center;
@@ -44,7 +44,7 @@
   align-items: flex-start;
   width: 100%;
   min-height: 28em;
-  max-height: auto;
+  height: auto;
 }
 
 .pair-breakdown {
