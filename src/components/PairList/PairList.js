@@ -10,7 +10,7 @@ const PairList = (props) => {
     dispatch(getPairs());
   }, []);
 
-  const pairs = useSelector((state) => state)
+  const pairs = useSelector((state) => state.pairReducer)
     .slice(0, 20)
     .filter((pair) => pair.ticker.includes(props.input.toUpperCase()));
 
